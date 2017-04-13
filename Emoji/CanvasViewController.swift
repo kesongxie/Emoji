@@ -92,7 +92,7 @@ class CanvasViewController: UIViewController {
                        // face.addGestureRecognizer(rotationGesture)
                         
                         
-                        rotationGesture.delegate = self;
+                       // rotationGesture.delegate = self;
 
                         self.newFaceCenter = face.center
                         

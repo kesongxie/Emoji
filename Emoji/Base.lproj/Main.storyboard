@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq3-Nw-RbX" userLabel="TrayView">
-                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laa-LT-uDt">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -109,7 +109,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Kq3-Nw-RbX" secondAttribute="trailing" id="8wq-iy-jqE"/>
                             <constraint firstItem="Kq3-Nw-RbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CzX-sl-j88"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kq3-Nw-RbX" secondAttribute="bottom" id="SOA-pZ-bf4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kq3-Nw-RbX" secondAttribute="bottom" constant="-110" id="SOA-pZ-bf4"/>
                         </constraints>
                     </view>
                     <connections>
