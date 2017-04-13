@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Canvas View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CanvasViewController" customModule="Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq3-Nw-RbX" userLabel="TrayView">
+                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laa-LT-uDt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LvP-9I-yQu"/>
+                                        </constraints>
+                                        <state key="normal" image="up-arrow-icon">
+                                            <color key="titleColor" red="0.058823529409999999" green="0.32549019610000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrowBtnTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="6n4-HM-58d"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-8G-pC2">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="90"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-ev-ui5">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZEN-Jr-86D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="zpg-PC-GGf" appends="YES" id="Oa8-2u-jNa"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-tK-7cB">
+                                                        <rect key="frame" x="128.5" y="0.0" width="118" height="40"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="HKS-u3-fY2" appends="YES" id="Vwb-Lg-71Y"/>
+                                                        </connections>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="dhQ-Ad-NOm">
+                                                        <rect key="frame" x="256.5" y="0.0" width="118.5" height="40"/>
+                                                        <gestureRecognizers/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="dhQ-Ad-NOm" firstAttribute="width" secondItem="ZEN-Jr-86D" secondAttribute="width" id="dw2-CG-e4t"/>
+                                                    <constraint firstItem="Za8-tK-7cB" firstAttribute="width" secondItem="ZEN-Jr-86D" secondAttribute="width" id="nSk-JJ-y5Q"/>
+                                                    <constraint firstAttribute="height" constant="40" id="oP8-mi-dDz"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-Vd-9QN">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="40"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="T6b-XO-mtU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="40"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="nWc-BA-vSU">
+                                                        <rect key="frame" x="128.5" y="0.0" width="118" height="40"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-F9-MVY">
+                                                        <rect key="frame" x="256.5" y="0.0" width="118.5" height="40"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="nWc-BA-vSU" firstAttribute="width" secondItem="T6b-XO-mtU" secondAttribute="width" id="Am0-Ss-QT9"/>
+                                                    <constraint firstItem="wMY-F9-MVY" firstAttribute="width" secondItem="T6b-XO-mtU" secondAttribute="width" id="b6F-bN-hkC"/>
+                                                    <constraint firstAttribute="height" constant="40" id="oBB-Is-tpV"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.32549019610000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DLN-8G-pC2" secondAttribute="trailing" id="1Mf-VA-xRU"/>
+                                    <constraint firstItem="DLN-8G-pC2" firstAttribute="top" secondItem="Laa-LT-uDt" secondAttribute="bottom" id="Iqq-oJ-Ofa"/>
+                                    <constraint firstAttribute="bottom" secondItem="DLN-8G-pC2" secondAttribute="bottom" constant="20" id="NwH-9O-XIX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Laa-LT-uDt" secondAttribute="trailing" id="Vkn-hy-EJT"/>
+                                    <constraint firstItem="Laa-LT-uDt" firstAttribute="top" secondItem="Kq3-Nw-RbX" secondAttribute="top" id="cfu-ck-9Wb"/>
+                                    <constraint firstItem="DLN-8G-pC2" firstAttribute="leading" secondItem="Kq3-Nw-RbX" secondAttribute="leading" id="hVe-O1-k5V"/>
+                                    <constraint firstItem="Laa-LT-uDt" firstAttribute="leading" secondItem="Kq3-Nw-RbX" secondAttribute="leading" id="oRd-YF-mHX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3j6-dE-2Ho" appends="YES" id="Xef-Az-cTr"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kq3-Nw-RbX" secondAttribute="trailing" id="8wq-iy-jqE"/>
+                            <constraint firstItem="Kq3-Nw-RbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CzX-sl-j88"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kq3-Nw-RbX" secondAttribute="bottom" id="SOA-pZ-bf4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowBtn" destination="Laa-LT-uDt" id="F0M-XO-2ki"/>
+                        <outlet property="bottomSpace" destination="SOA-pZ-bf4" id="7hb-dy-eyJ"/>
+                        <outlet property="trayView" destination="Kq3-Nw-RbX" id="NVZ-Dt-jHf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3j6-dE-2Ho">
+                    <connections>
+                        <action selector="dragging:" destination="BYZ-38-t0r" id="Us9-4I-A70"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zpg-PC-GGf">
+                    <connections>
+                        <action selector="draggingEmoji:" destination="BYZ-38-t0r" id="FSp-oK-uYe"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HKS-u3-fY2">
+                    <connections>
+                        <action selector="draggingEmoji:" destination="BYZ-38-t0r" id="P5J-8I-pJQ"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="640" height="640"/>
+        <image name="2" width="640" height="640"/>
+        <image name="3" width="640" height="618"/>
+        <image name="4" width="640" height="640"/>
+        <image name="5" width="640" height="640"/>
+        <image name="6" width="614" height="681"/>
+        <image name="up-arrow-icon" width="40" height="40"/>
+    </resources>
+</document>
